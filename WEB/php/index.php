@@ -1,4 +1,9 @@
 <?php  
+/*
+  index
+  Autor: im-pro
+*/
+
   require_once ('../Settings.php');
   require_once ('Database.php');
   require_once ('SQL.php');

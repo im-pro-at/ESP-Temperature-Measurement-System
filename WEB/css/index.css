@@ -1,0 +1,209 @@
+/*
+  index.css
+  
+  Autor: im-pro
+*/
+
+html, body
+{
+	height: 100%;
+	margin: 0px;
+	word-wrap: break-word;
+}
+.link, a
+{
+	color: #0085cc;
+	cursor: pointer;
+	text-decoration: underline;      
+}
+table
+{
+	border-collapse:collapse;
+}
+label 
+{
+	display:inline-block;
+}
+pre 
+{
+	margin: 0px;
+  font-size: 16px;
+  font-family: Verdana,Arial,sans-serif;
+  white-space: pre-wrap;
+}
+ins
+{
+  color: rgb(0,255,0);
+}
+del
+{
+  color: rgb(255,0,0);
+}
+#head
+{
+  position: fixed;
+  background-color: white;
+}
+#head, #haedtable,#haedtable_search, #placeholder
+{
+	width:100%;
+	height:100px;
+  border:none;
+}
+
+#haedtable_user, #haedtable_settings
+{
+	width:80px;
+	height:100px;
+}
+#haedtable_logo
+{
+	width:100px;
+	height:100px;
+}
+
+#haedtable_date
+{
+  text-align: center;
+}
+#haedtable_date input
+{
+  width: 150px;
+}
+#date_span
+{
+  white-space: nowrap;
+}
+
+
+#user
+{
+	width: 80px;
+	height: 80px;	
+	background:url('../images/user.png');
+	background-size: 70px 70px;
+  background-position: 5px 5px;
+	background-repeat: no-repeat;
+  padding-bottom: 20px;
+}
+#user.active
+{
+	background:url('../images/user_hover.png');
+	background-size: 70px 70px;
+  background-position: 5px 5px;
+	background-repeat: no-repeat;
+}
+#user:hover
+{
+	background-size: 80px 80px;
+  background-position: 0px 0px;
+}
+
+#settings
+{
+	width: 80px;
+	height: 80px;	
+	background:url('../images/gear.png');
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+  background-position: 10px 10px;
+  padding-bottom: 20px;
+}
+#settings:hover
+{
+	background-size: 70px 70px;
+  background-position: 5px 5px;
+}
+
+
+#fountainG{
+	position:relative;
+	width: 100px;
+	height: 100px;
+	margin:auto;
+}
+
+.fountainG{
+	position:absolute;
+	bottom:0px;
+	background-color:rgb(0,0,0);
+	width:10px;
+	height:10px;
+	animation-name:bounce_fountainG;
+	animation-duration:1.105s;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+	-webkit-animation-name:bounce_fountainG;
+	-webkit-animation-duration:1.105s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	transform:scale(.01);
+}
+@-webkit-keyframes bounce_fountainG{
+	0%{
+	transform:scale(1);
+		background-color:rgba(0,133,204,255);
+	}
+
+	100%{
+	transform:scale(.3);
+		background-color:rgba(0,133,204,0);
+	}
+}
+
+#fountainG_1{
+	left:0;
+	animation-delay:0.446s;
+	-webkit-animation-delay:0.446s;
+}
+
+#fountainG_2{
+	left:18px;
+	animation-delay:0.5525s;
+	-webkit-animation-delay:0.5525s;
+}
+
+#fountainG_3{
+	left:36px;
+	animation-delay:0.659s;
+	-webkit-animation-delay:0.659s;
+}
+
+#fountainG_4{
+	left:54px;
+	animation-delay:0.7755s;
+	-webkit-animation-delay:0.7755s;
+}
+
+#fountainG_5{
+	left:72px;
+	animation-delay:0.882s;
+	-webkit-animation-delay:0.882s;
+}
+
+#fountainG_6{
+	left:90px;
+	animation-delay:0.9985s;
+	-webkit-animation-delay:0.9985s;
+}
+
+
+.ui-selectmenu-button
+{
+	vertical-align: middle;
+}
+.mydialog input, .mydialog label, .mydialog textarea
+{
+	display: block;
+	width: 100%;
+}
+.mydialog label
+{
+	margin-top: 10px;
+}
+.mydialog
+{
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}

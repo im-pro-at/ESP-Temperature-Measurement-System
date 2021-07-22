@@ -355,7 +355,7 @@
           FROM temp
           WHERE sensor= \''.$sql->escape($sensor["id"]).'\' AND `time` > \''.$sql->escape($start).'\' AND `time` < \''.$sql->escape($stop).'\'
           GROUP BY FLOOR(time/'.$groupinterval.')
-          ORDER BY `temp`.`time` ASC
+          ORDER BY FLOOR(time/'.$groupinterval.')
           ');
         $output[$i]["data"]=$sql_ergebniss->fetch_all();
       }
